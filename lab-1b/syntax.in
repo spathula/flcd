@@ -1,0 +1,39 @@
+program = decllist cmpdstmt
+
+decllist = declaration | declaration ";" decllist
+
+declaration = type identifier
+
+type = "boolean" | "char" | "int" | "float" | "string"
+
+array = identifier "[" number "]"
+
+cmpdstmt = "{" stmtlist "}"
+
+stmtlist = stmt | stmt ";" stmtlist
+
+stmt = simplestmt | structstmt
+
+simplestmt = assignstmt | iostmt
+
+assignstmt = identifier "=" expression
+
+expression = expression ( "+" | "-" ) term | term
+
+term = term ( "/" | "*"  | "%" )  factor | factor
+
+factor = "(" expression ")" | identifier
+
+iostmt = ("read" | "print") "(" identifier ")"
+
+structstmt = cmpdstmt | ifstmt | whilestmt
+
+ifstmt = "if (" condition ") {" stmt "}" ["else {" stmt "}"]
+
+whilestmt = "while (" condition ") do {" stmt "}"
+
+condition = expression relation expression
+
+relation = "<" | ">" | "==" | "!=" | "<=" | ">=" | "||" | "&&"
+
+identifier - defined in lexic.txt
