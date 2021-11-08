@@ -11,11 +11,11 @@ Lexic:
 
     I. Special symbols:
 
-        - operators: + - * /  = < > == != <= >= || &&
+        - operators: + - * / % = < > == != <= >= || &&
 
-        - separators: { } ; space
+        - separators: { } ; space ( ) [ ]
 
-        - reserved words: const, do, while, else, if, int, char, boolean, string, float, read, print, let
+        - reserved words: const, do, while, else, if, int, char, boolean, string, read, print, let
 
     II. Identifiers
 

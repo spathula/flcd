@@ -1,0 +1,13 @@
+int c;
+int d;
+int aux;
+{
+    c=151;
+    d=86;
+    while(d != 0)do{
+        aux=c;
+        c=d;
+        d=aux%d;
+    }
+    print(c);
+}

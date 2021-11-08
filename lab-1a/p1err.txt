@@ -2,12 +2,12 @@ int a;
 int b;
 char c;
 {
-a/=3;
-b=5;
-c='+1';
-if (a>b) {
-print(a);
-} else {
-pritn(b);
-}
+    a /= 3;
+    b = 5;
+    c = '11';
+    if ( a > b) {
+        print(a);
+    } else {
+        print(b);
+    }
 }
