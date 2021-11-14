@@ -4,6 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner();
-        scanner.scan("p1err.txt");
+        scanner.scan("p1.txt");
     }
 }
