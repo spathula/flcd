@@ -21,7 +21,7 @@ Lexic:
 
         -a sequence of letters and  digits, such that the first character is a letter; the rule is:
 
-            identifier = letter {letter | digit | "_"}
+            identifier = letter, {letter | digit | "_"}
 
             letter = "A" | "B" | ... | "Z" | "a" | "b" | ... | "z"
 
@@ -34,7 +34,7 @@ Lexic:
 
         1. number:
         
-            number = ["-"]non_zerodigit{digit} | "0"
+            number = ["-"]non_zerodigit, {digit} | "0"
 
         2. character: 
 
@@ -44,6 +44,6 @@ Lexic:
 
             conststring = "string"
 
-            string = {char} string
+            string = char, {char}
 
             char = letter | digit
