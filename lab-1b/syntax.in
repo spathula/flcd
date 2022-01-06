@@ -36,4 +36,10 @@ condition = expression relation expression
 
 relation = "<" | ">" | "==" | "!=" | "<=" | ">=" | "||" | "&&"
 
-identifier - defined in lexic.txt
+identifier = letter, {letter | digit | "_"}
+
+letter = "A" | "B" | ... | "Z" | "a" | "b" | ... | "z"
+
+digit = "0" | nonzero_digit
+
+nonzero_digit = "1" |...| "9"
