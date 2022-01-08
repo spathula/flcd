@@ -1,8 +1,9 @@
 lex:
 	lex spec.lex
-	gcc -lfl lex.yy.c -o spec.out
+	byacc -d pars.yacc
+	gcc lex.yy.c y.tab.c -o comp.out -lfl
 
 run:
-	./spec.out p1.txt
+	./comp.out p3.txt
 
 all: lex run
